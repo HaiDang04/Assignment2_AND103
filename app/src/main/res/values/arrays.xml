@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loai_xe_array">
+        <item>Xe máy</item>
+        <item>Ô tô</item>
+    </string-array>
+</resources>

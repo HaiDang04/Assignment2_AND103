@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
+    tools:context=".AddCar">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Màn Hình Thêm Xe"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:id="@+id/ivChonAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/photo"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn Ảnh"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:textSize="25sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tenXeTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Xe"
+            android:textColor="@color/blue" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/giaTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loaiTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Loại"
+            android:textColor="@color/colorPrimaryDark" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:background="@drawable/bg_button_primary"
+        android:text="Thêm Xe"
+        android:textColor="@android:color/white" />
+</LinearLayout>

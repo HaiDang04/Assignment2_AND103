@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập Nhật Xe"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/picture_24"
+        />
+    <EditText
+        android:id="@+id/edtTenXe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="22dp"
+        android:padding="10dp"
+        android:hint="Nhập Tên Xe"
+        android:layout_marginBottom="22dp"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        />
+    <EditText
+        android:id="@+id/edtGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:hint="Nhập Giá Xe"
+        android:layout_marginBottom="22dp"
+        android:inputType="number"
+        android:importantForAutofill="no"
+        />
+    <Spinner
+        android:id="@+id/spinnerLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAllCaps="true"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            app:backgroundTint="@null"
+            android:text="Cập Nhật"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:background="@color/green"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:text="Thoát"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnCancel"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+</LinearLayout>
